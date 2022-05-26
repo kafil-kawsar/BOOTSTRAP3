@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Bootstrap">
+    <meta name="description" content="Personal portfolio">
+    <meta name="keywords" content="html, html tutorial, css tutorial">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="5 days">
+    <meta name="author" content="Kafil Kawsar">
+
+    <!-- CSS links -->
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Bootstrap</title>
+</head>
+<body>
+
+  <section>
+    <div class="container">
+      <div class="row row-cols-4">
+
+        <div class="col">
+          <div class="box">Column</div>
+        </div>
+        <div class="col">
+          <div class="box">Column</div>
+        </div>
+        <div class="col">
+          <div class="box">Column</div>
+        </div>
+        <div class="col">
+          <div class="box">Column</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container">
+      <div class="row align-items-system">
+
+        <div class="col-lg">
+          <div class="box"></div>
+        </div>
+        <div class="col-lg-7 bg-black">
+          <div class="row">
+            <div class="col-lg-6"><div class="box">Level 2: .col-8 .col-sm-6</div></div>
+            <div class="col-lg-6"><div class="box">Level 2: .col-8 .col-sm-6</div></div>
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="box"></div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container">
+      <div class="row h_custom">
+
+        <div class="col-lg-4 align-self-start">
+          <div class="box">One of three columns</div>
+        </div>
+        <div class="col-lg-4 align-self-center">
+          <div class="box">One of three columns</div>
+        </div>
+        <div class="col-lg-4 align-self-end">
+          <div class="box">One of three columns</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col-lg-3">
+            <div class="box">Column</div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box">Column</div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box">Column</div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box">Column</div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row  h_custom align-items-center">
+        
+        <div class="col-lg-4">
+          <div class="box">One of three columns2</div>
+        </div>
+        <div class="col-lg-4">
+          <div class="box">One of three columns2</div>
+        </div>
+        <div class="col-lg-4">
+          <div class="box">One of three columns2</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row justify-content-center">
+        
+        <div class="col-lg-4">
+          <div class="box"></div>
+        </div>
+        <div class="col-lg-4">
+          <div class="box"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row justify-content-around">
+        
+        <div class="col-lg-4">
+          <div class="box"></div>
+        </div>
+        <div class="col-lg-4">
+          <div class="box"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-4">
+          <div class="box"></div>
+        </div>
+        <div class="col-lg-4">
+          <div class="box"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+     
+  <form class="form1">
+    <div class="mb-3">
+      <label for="email1" class="form-label">Email address</label>
+      <input type="email1" class="form-control email1" id="email1" required>
+    </div>
+    <div class="mb-3">
+      <label for="password1" class="form-label">Password</label>
+      <input type="password" class="form-control password1" id="password1" name="password1" required>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input check1" id="check1" name="check1">
+      <label class="form-check-label" for="check1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-danger">Submit</button>
+  </form>
+
+  <section class="section0 w-90 mx-auto my-5  p-4 rounded-3">
+    <div class="bg-dark text-center border-2 rounded-2">
+        <h2 class="p-2 text-light">Personal info Validation</h2>
+    </div>
+    <form class="row g-3 needs-validation" novalidate>
+
+        <!-- first name -->
+        <div class="col-md-4">
+            <label for="firstname" class="form-label">First Name</label>
+            <input type="text" name="firstname" class="form-control firstname" id="firstname"
+                placeholder="Enter Your First Name" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Enter Your First Name
+            </div>
+        </div>
+
+        <!-- last name -->
+        <div class="col-md-4">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter your Last Name"
+                required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Enter your Last Name
+            </div>
+        </div>
+
+        <!-- email -->
+        <div class="col-md-4">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email"
+                required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Enter your email
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input type="text" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+                Please provide a valid city.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select a valid state.
+            </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">
+                Please provide a valid zip.
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-danger" type="submit">Submit form</button>
+        </div>
+    </form>
+
+
+</section>
+
+
+
+<section class="section2 w-50 mx-auto my-5 border border-danger border-3 p-4 rounded-3">
+    <div class="bg-danger text-center border-2 rounded-2">
+        <h2 class="p-2 text-light">Select your Items</h2>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Select the sports channel you want to subscribe: </label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Cricket</option>
+                <option>Football</option>
+                <option>Wrestling</option>
+                <option>Boxing</option>
+                <option>Chess</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect2">Please select your favourite colour :</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2">
+                <option>Red</option>
+                <option>Green</option>
+                <option>Black</option>
+                <option>Yellow</option>
+                <option>Blue</option>
+            </select>
+        </div>
+        <!-- radio buttons start -->
+        <h5 class="mt-2">Confirm Your Gender:</h5>
+        <div class="gender-check">
+            <input class="gender-input" type="radio" name="gender-input" id="male" value="male" checked>
+            <label class="gender-check-label" for="male">
+                Male
+            </label>
+        </div>
+        <div class="gender-check">
+            <input class="gender-check-input" type="radio" name="gender-input" id="female" value="female">
+            <label class="gender-check-label" for="female">
+                Female
+            </label>
+        </div>
+        <div class="gender-check disabled">
+            <input class="gender-check-input" type="radio" name="gender-input" id="gender-disabled" value="option3"
+                disabled>
+            <label class="gender-check-label" for="gender-disabled">
+                Disabled Gender check
+            </label>
+        </div>
+        <!-- radio buttons end -->
+        <div class="form-group mt-3">
+            <label for="textarea1">Insert the article you want to publish:</label>
+            <textarea class="form-control" id="textarea1" rows="3"></textarea>
+        </div>
+
+        <div class="form-group mt-4">
+            <label for="file1">Please insert a document</label>
+            <input type="file" class="file1" id="File1">
+        </div><br>
+        <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+</section>
+
+    
+    <!-- JS links  -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
